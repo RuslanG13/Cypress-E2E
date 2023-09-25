@@ -17,12 +17,12 @@ export class registerPage {
         cy.visit(Cypress.env("URL"));
     }
 
-    enterFirstName(FName) {
-        cy.get(this.weblocators.firstName).type(FName);
+    enterFirstName(fName) {
+        cy.get(this.weblocators.firstName).type(fName);
     }
 
-    enterLastName(LName) {
-        cy.get(this.weblocators.lastName).type(LName);
+    enterLastName(lName) {
+        cy.get(this.weblocators.lastName).type(lName);
     }
 
     enterEmail(email) {
