@@ -1,7 +1,7 @@
 export class registerPage {
-
+    
+    // locators
     weblocators = {
-
         firstName: "#input-firstname",
         lastName: "#input-lastname",
         email: "#input-email",
@@ -10,9 +10,9 @@ export class registerPage {
         passwordConfirm: "#input-confirm",
         policyCheckbox: "input[type='checkbox']",
         continueBtn: ".btn.btn-primary"
-
     }
 
+    // methods
     openURL() {
         cy.visit(Cypress.env("URL"));
     }
@@ -45,5 +45,4 @@ export class registerPage {
     clickOnContinue() {
         cy.get(this.weblocators.continueBtn).click();
     }
-
 }
