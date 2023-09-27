@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
-import { homePage } from "../pages/homePage";
+import { homePage } from "../../pages/homePage";
 const homePageObj = new homePage();
-import testData from "../fixtures/testData.json";
+import testData from "../../fixtures/testData.json";
 
 describe("test automation", () => {
 
