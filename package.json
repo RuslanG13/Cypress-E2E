@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:addToCart": "npx cypress run --spec C:/Users/rusla/OneDrive/Desktop/Cypress-E2E/cypress/e2e/tests/addToCartTest.cy.js",
+    "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addToCartTest.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
