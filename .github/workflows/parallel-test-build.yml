@@ -1,0 +1,28 @@
+name: Sanity Build
+on: push
+jobs:
+  add-to-cart-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Add To Cart-run
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run test:addToCart
+         
+    register-flow-run:
+        runs-on: ubuntu-22.04
+        steps:
+            - name: Checkout
+            uses: actions/checkout@v4
+            # Install npm dependencies, cache them correctly
+            # and run all Cypress tests
+            - name: Register Flow-run
+            uses: cypress-io/github-action@v6
+            with:
+            command: npm run test:addToCart         
+  
+          
