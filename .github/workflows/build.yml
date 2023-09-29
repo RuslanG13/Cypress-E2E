@@ -13,7 +13,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with: 
-          command: npm run test:addToCart\
+          command: npm run test:addToCart
       
       - name: Cypress Test Report
         uses: actions/upload-artifact@v3
