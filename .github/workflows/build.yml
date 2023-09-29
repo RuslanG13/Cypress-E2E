@@ -6,7 +6,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
+      
       - name: Cypress run
         uses: cypress-io/github-action@v6
+        with: 
+          command: npm run test:addToCart\
+      
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: Mochaawesome HTML Report
+          path: cypress/reports/html  
+           
