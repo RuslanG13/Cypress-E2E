@@ -26,7 +26,7 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
             SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
-            SLACK_ICON: https://www.rewizor.ru/files/182805dde2.jpg
+            SLACK_ICON: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jyx-BeGPb0O2fKNbk3Z7_b2yVVDdSYVxXA&usqp=CAU
             SLACK_MESSAGE: 'Test Automation Report https://github.com/RuslanG13/Cypress-E2E/actions/runs/${{github.run_id}}'
             SLACK_USERNAME: Mr.Pechkin
             SLACK_TITLE: Cypress Web Test
